@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Про хаб — MYSTETSVO</title>
+  <meta name="description" content="Місія, цінності та контакти хабу українського мистецтва MYSTETSVO." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top" class="site-shell">
+
+    <!-- ============ Header ============ -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+          <svg viewBox="0 0 50 44" aria-hidden="true">
+            <path d="M25 2 48 22 25 42 2 22Z" />
+            <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+          </svg>
+          <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Меню" />
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Головна</a>
+          <a href="events.html">Події</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="artists.html">Митці</a>
+          <a href="about.html" aria-current="page">Про хаб</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search-field">
+            <span class="sr-only">Пошук</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4.2 4.2" /></svg>
+            <input type="search" placeholder="Пошук (Enter)" />
+          </label>
+          <label class="city-select">
+            <span>Місто:</span>
+            <select aria-label="Оберіть місто">
+              <option selected>Львів</option>
+              <option>Київ</option>
+              <option>Одеса</option>
+              <option>Харків</option>
+            </select>
+          </label>
+        </div>
+        <label class="menu-button" for="menu-toggle">
+          <span class="sr-only">Відкрити або закрити меню</span>
+          <span class="icon-open"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18" /></svg></span>
+          <span class="icon-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 5 14 14M19 5 5 19" /></svg></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section class="hero hero-page">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span> Про хаб</div>
+            <h1>Платформа, що зберігає пам’ять і відкриває нові імена</h1>
+            <p>MYSTETSVO — це інноваційний цифровий хаб українського мистецтва: оцифрований архів, інтерактивна афіша подій та незалежна спільнота митців.</p>
+            <div class="button-row">
+              <a class="button button-dark" href="#mission">Наша місія <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              <a class="button button-outline" href="#contacts">Контакти</a>
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1578855019520-af8101c056e2?auto=format&fit=crop&w=1200&q=85" alt="Простір сучасної галереї" />
+            <figcaption class="image-credit">Фото: Unsplash</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ Місія ============ -->
+      <section id="mission" class="section" aria-labelledby="mission-title">
+        <div class="container about-mission">
+          <article class="about-text">
+            <span class="section-number">01 / Місія</span>
+            <h2 id="mission-title">Мистецтво формує стійкість і пам’ять</h2>
+            <p>Ми започаткували проєкт MYSTETSVO для того, щоб шедеври українського візуального мистецтва були доступними кожному в будь-якій точці планети: від глибинної бойківської ікони до сміливих генеративних медіа-експериментів сьогодення.</p>
+            <p>Хаб співпрацює з провідними музеями Львова, Києва, Харкова та Одеси. Ми здійснюємо прецизійне 3D- та 2D-оцифрування, проводимо міждисциплінарні лекції, виставки, а також сприяємо виходу українських митців на міжнародну арену.</p>
+          </article>
+          <dl class="about-stats">
+            <div><dt>оцифрованих творів</dt><dd>1 200+</dd></div>
+            <div><dt>митців у відкритій базі</dt><dd>600+</dd></div>
+            <div><dt>актуальні події сезону</dt><dd>84</dd></div>
+            <div><dt>міста-партнери хабу</dt><dd>4</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============ Цінності ============ -->
+      <section class="section values-section" aria-labelledby="values-title">
+        <div class="container">
+          <header class="section-heading">
+            <div>
+              <span class="section-number">02 / Принципи</span>
+              <h2 id="values-title">Наші ключові засади</h2>
+            </div>
+            <p>Три непорушні принципи, на яких будується вся діяльність інституції.</p>
+          </header>
+          <div class="values-grid">
+            <article class="value-card">
+              <span class="value-index">01</span>
+              <h3>Зберігаємо</h3>
+              <p>Оцифровуємо твори у високій роздільності, фіксуємо прозорий провенанс і створюємо децентралізований архів, захищений від втрати.</p>
+            </article>
+            <article class="value-card">
+              <span class="value-index">02</span>
+              <h3>Відкриваємо</h3>
+              <p>Презентуємо нові імена молодих резидентів поруч із метрами авангарду й надаємо митцям інфраструктуру для творчих прем'єр.</p>
+            </article>
+            <article class="value-card">
+              <span class="value-index">03</span>
+              <h3>Поєднуємо</h3>
+              <p>Гуртуємо в єдиному культурному полі глядачів, дослідників, галереї та авторів, перетворюючи сміливі концепції на реальні проєкти.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Контакти ============ -->
+      <section id="contacts" class="section contact-section" aria-labelledby="contacts-title">
+        <div class="container contact-grid">
+          <div class="contact-intro">
+            <span class="section-number">03 / Контакти</span>
+            <h2 id="contacts-title">Зв’яжіться з нашою командою</h2>
+            <p>Маєте запитання щодо резиденції, бажаєте передати твори для оцифрування чи організувати спільну виставку? Напишіть нам.</p>
+            <div class="contact-note">
+              <span>Середній час відповіді</span>
+              <strong>До 2 робочих днів</strong>
+            </div>
+          </div>
+          <address class="contact-details">
+            <dl>
+              <div>
+                <dt>Локація хабу</dt>
+                <dd>м. Львів, вул. Підвальна, 4 (Порохова вежа)</dd>
+              </div>
+              <div>
+                <dt>Електронна пошта</dt>
+                <dd><a href="mailto:contact@mystetstvo.ua">contact@mystetstvo.ua</a></dd>
+              </div>
+              <div>
+                <dt>Телефон для довідок</dt>
+                <dd><a href="tel:+380322550144">+38 (032) 255-01-44</a></dd>
+              </div>
+              <div>
+                <dt>Години роботи</dt>
+                <dd>Вівторок – Неділя: 11:00 – 20:00 (Пн — вихідний)</dd>
+              </div>
+            </dl>
+            <a class="button button-dark" href="index.html#contact">Надіслати звернення через форму <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+            <svg viewBox="0 0 50 44" aria-hidden="true">
+              <path d="M25 2 48 22 25 42 2 22Z" />
+              <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+            </svg>
+            <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+          </a>
+          <p>Цифровий хаб українського мистецтва, що зберігає пам’ять і відкриває нові імена.</p>
+        </div>
+        <div class="footer-links">
+          <div><strong>Досліджувати</strong><a href="events.html">Події</a><a href="gallery.html">Галерея</a><a href="artists.html">Митці</a></div>
+          <div><strong>Співпраця</strong><a href="artists.html">Для митців</a><a href="about.html">Для галерей</a><a href="about.html#contacts">Партнерство</a></div>
+        </div>
+        <div class="newsletter">
+          <span>Раз на місяць — найважливіше</span>
+          <strong>Листи про мистецтво</strong>
+          <form action="#" method="post">
+            <input type="email" name="email" required placeholder="Ваш email..." aria-label="Email для підписки" />
+            <button type="submit" aria-label="Підписатися"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 MYSTETSVO · Студентка Бурба Д. Р. (гр. ПП-25)</span>
+        <a href="about.html">Політика конфіденційності</a>
+        <span>Зроблено в Україні 🇺🇦</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

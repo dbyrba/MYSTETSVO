@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея робіт — MYSTETSVO</title>
+  <meta name="description" content="Галерея MYSTETSVO: добірка робіт цифрового та традиційного мистецтва від резидентів хабу." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top" class="site-shell">
+
+    <!-- ============ Header ============ -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+          <svg viewBox="0 0 50 44" aria-hidden="true">
+            <path d="M25 2 48 22 25 42 2 22Z" />
+            <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+          </svg>
+          <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Меню" />
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Головна</a>
+          <a href="events.html">Події</a>
+          <a href="gallery.html" aria-current="page">Галерея</a>
+          <a href="artists.html">Митці</a>
+          <a href="about.html">Про хаб</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search-field">
+            <span class="sr-only">Пошук</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4.2 4.2" /></svg>
+            <input type="search" placeholder="Пошук (Enter)" />
+          </label>
+          <label class="city-select">
+            <span>Місто:</span>
+            <select aria-label="Оберіть місто">
+              <option selected>Львів</option>
+              <option>Київ</option>
+              <option>Одеса</option>
+              <option>Харків</option>
+            </select>
+          </label>
+        </div>
+        <label class="menu-button" for="menu-toggle">
+          <span class="sr-only">Відкрити або закрити меню</span>
+          <span class="icon-open"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18" /></svg></span>
+          <span class="icon-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 5 14 14M19 5 5 19" /></svg></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section class="hero hero-page">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span> Галерея</div>
+            <h1>Цифрове мистецтво: постійна експозиція</h1>
+            <p>Добірка творів українських авторів: генеративна графіка, 3D-скульптура, відеоарт та цифровий живопис. Кожен твір оцифровано та верифіковано з відкритим провенансом.</p>
+            <div class="button-row">
+              <a class="button button-dark" href="#works">Переглянути роботи <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              <a class="button button-outline" href="about.html#mission">Про відкритий архів</a>
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?auto=format&fit=crop&w=1400&q=85" alt="Відвідувачка перед картиною в музеї" />
+            <figcaption class="image-credit">Фото: Unsplash</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ Роботи ============ -->
+      <section id="works" class="section" aria-labelledby="works-title">
+        <div class="container">
+          <header class="section-heading">
+            <div>
+              <span class="section-number">01 / Колекція</span>
+              <h2 id="works-title">Обрані роботи резиденцій</h2>
+            </div>
+            <p>Натисніть на будь-який твір, щоб відкрити паспорт, високу роздільність та опис концепції.</p>
+          </header>
+
+          <!-- Інтерактивні фільтри -->
+          <div class="filter-bar" role="tablist" aria-label="Фільтрація творів">
+            <button type="button" class="filter-btn gallery-filter-btn active" data-filter="all">Всі твори (7)</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="generative">Генеративна графіка</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="3d">3D &amp; Форма</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="paint">Живопис</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="video">Відеоарт &amp; Моушн</button>
+          </div>
+
+          <ul class="gallery-grid">
+            <!-- Відеоарт елемент -->
+            <li class="gallery-item gallery-item--wide" data-category="video" style="cursor: pointer;">
+              <figure style="background: #000;">
+                <video muted autoplay loop playsinline style="width:100%; height:100%; object-fit:cover; opacity:0.9;">
+                  <source src="art-video.mp4" type="video/mp4" />
+                </video>
+                <figcaption>
+                  <strong style="color:var(--sand);">«Трансформація форми: Код спадщини» (Відеоарт)</strong>
+                  <span>MYSTETSVO Creative Lab · Генеративний моушн, 2026 · [Прем'єра]</span>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item gallery-item--tall" data-category="generative" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?auto=format&fit=crop&w=1400&q=85" alt="«Пам’ять землі» — цифрова робота, Соломія Гнатюк" style="object-position: center 30%" loading="lazy" />
+                <figcaption><strong>«Пам’ять землі»</strong><span>Соломія Гнатюк · Генеративна графіка, 2025</span></figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item" data-category="3d" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1790055279508-cd2c42977c63?auto=format&fit=crop&w=1200&q=85" alt="«Вербниця 2.0» — цифрова робота, Орест Лисенко" style="object-position: center" loading="lazy" />
+                <figcaption><strong>«Вербниця 2.0»</strong><span>Орест Лисенко · 3D-ілюстрація, 2026</span></figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item" data-category="paint" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1578855019520-af8101c056e2?auto=format&fit=crop&w=1200&q=85" alt="«Колір тиші» — цифрова робота, Марта Бойко" style="object-position: center" loading="lazy" />
+                <figcaption><strong>«Колір тиші»</strong><span>Марта Бойко · Цифровий живопис, 2025</span></figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item" data-category="video" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1606819717115-9159c900370b?auto=format&fit=crop&w=1200&q=85" alt="«Орнамент у русі» — цифрова робота, Данило Ковальчук" style="object-position: center" loading="lazy" />
+                <figcaption><strong>«Орнамент у русі»</strong><span>Данило Ковальчук · Моушн-графіка, 2024</span></figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item gallery-item--wide" data-category="generative" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1606819717115-9159c900370b?auto=format&fit=crop&w=1200&q=85" alt="«Світло Порохової вежі» — цифрова робота, Ярина Мельник" style="object-position: center 70%" loading="lazy" />
+                <figcaption><strong>«Світло Порохової вежі»</strong><span>Ярина Мельник · Фотоколаж та AR, 2026</span></figcaption>
+              </figure>
+            </li>
+
+            <li class="gallery-item" data-category="paint" style="cursor: pointer;">
+              <figure>
+                <img src="https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?auto=format&fit=crop&w=1400&q=85" alt="«Тіні модернізму» — цифрова робота, Тарас Петренко" style="object-position: right center" loading="lazy" />
+                <figcaption><strong>«Тіні модернізму»</strong><span>Тарас Петренко · Цифровий колаж, 2025</span></figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-band">
+        <div class="container cta-inner">
+          <div>
+            <h2>Бажаєте представити власну роботу?</h2>
+            <p>MYSTETSVO проводить відкритий набір робіт цифрових та традиційних митців на весняну кураторську виставку.</p>
+          </div>
+          <a class="button button-light" href="about.html#contacts">Подати заявку на резиденцію <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+            <svg viewBox="0 0 50 44" aria-hidden="true">
+              <path d="M25 2 48 22 25 42 2 22Z" />
+              <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+            </svg>
+            <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+          </a>
+          <p>Цифровий хаб українського мистецтва, що зберігає пам’ять і відкриває нові імена.</p>
+        </div>
+        <div class="footer-links">
+          <div><strong>Досліджувати</strong><a href="events.html">Події</a><a href="gallery.html">Галерея</a><a href="artists.html">Митці</a></div>
+          <div><strong>Співпраця</strong><a href="artists.html">Для митців</a><a href="about.html">Для галерей</a><a href="about.html#contacts">Партнерство</a></div>
+        </div>
+        <div class="newsletter">
+          <span>Раз на місяць — найважливіше</span>
+          <strong>Листи про мистецтво</strong>
+          <form action="#" method="post">
+            <input type="email" name="email" required placeholder="Ваш email..." aria-label="Email для підписки" />
+            <button type="submit" aria-label="Підписатися"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 MYSTETSVO · Студентка Бурба Д. Р. (гр. ПП-25)</span>
+        <a href="about.html">Політика конфіденційності</a>
+        <span>Зроблено в Україні 🇺🇦</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Artwork Lightbox Modal -->
+  <div id="artwork-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button type="button" class="modal-close" aria-label="Закрити">&times;</button>
+      <div class="modal-art-preview">
+        <img class="modal-art-img" src="" alt="Перегляд твору" />
+      </div>
+      <h3 class="modal-art-title">Назва твору</h3>
+      <p class="modal-art-author">Автор та техніка</p>
+      <div style="display: flex; gap: 12px; margin-top: 20px;">
+        <button type="button" class="button button-dark modal-close">Закрити паспорт</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

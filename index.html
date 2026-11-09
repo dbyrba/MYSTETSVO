@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYSTETSVO — Українське мистецтво: від витоків до сьогодення</title>
+  <meta name="description" content="Цифровий хаб українського мистецтва: оцифровані колекції, відеоарт, перевірений провенанс і події у вашому місті." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top" class="site-shell">
+
+    <!-- ============ Header ============ -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+          <svg viewBox="0 0 50 44" aria-hidden="true">
+            <path d="M25 2 48 22 25 42 2 22Z" />
+            <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+          </svg>
+          <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Меню" />
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html" aria-current="page">Головна</a>
+          <a href="events.html">Події</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="artists.html">Митці</a>
+          <a href="about.html">Про хаб</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search-field">
+            <span class="sr-only">Пошук</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4.2 4.2" /></svg>
+            <input type="search" placeholder="Пошук (Enter)" />
+          </label>
+          <label class="city-select">
+            <span>Місто:</span>
+            <select aria-label="Оберіть місто">
+              <option selected>Львів</option>
+              <option>Київ</option>
+              <option>Одеса</option>
+              <option>Харків</option>
+            </select>
+          </label>
+        </div>
+        <label class="menu-button" for="menu-toggle">
+          <span class="sr-only">Відкрити або закрити меню</span>
+          <span class="icon-open"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg></span>
+          <span class="icon-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19" /></svg></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span> Мистецтво формує пам’ять</div>
+            <h1>Українське мистецтво: від витоків до сьогодення</h1>
+            <p>Відкривайте виставки, досліджуйте перевірений провенанс, переглядайте генеративний відеоарт і знайомтеся з митцями, які формують нашу культурну ідентичність.</p>
+            <div class="button-row">
+              <a class="button button-dark" href="#video-showcase">Дивитися відеоарт <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              <a class="button button-outline" href="gallery.html">Відкрити галерею</a>
+            </div>
+            <div class="hero-facts">
+              <div><strong>1 200+</strong><span>оцифрованих творів</span></div>
+              <div><strong>84</strong><span>актуальні події</span></div>
+              <div><strong>600+</strong><span>резидентів хабу</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1578855019520-af8101c056e2?auto=format&fit=crop&w=1200&q=85" alt="Простір сучасної галереї з кольоровими картинами" />
+            <div class="hero-art-card">
+              <span>Вибір кураторки</span>
+              <strong>Нова українська хвиля</strong>
+              <small>Експозиція · 24 роботи · 2026</small>
+            </div>
+            <svg class="hero-star" viewBox="0 0 160 160" aria-hidden="true">
+              <g fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M80 7 98 45l39-22-22 39 38 18-38 18 22 39-39-22-18 38-18-38-39 22 22-39L7 80l38-18-22-39 39 22Z" />
+                <path d="m80 34 13 33 33 13-33 13-13 33-13-33-33-13 33-13Z" />
+                <rect x="61" y="61" width="38" height="38" transform="rotate(45 80 80)" />
+                <circle cx="80" cy="80" r="8" />
+              </g>
+            </svg>
+            <div class="image-credit">Фото: Mike Von / Unsplash</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Категорії ============ -->
+      <section id="categories" class="section categories">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-number">01 / Каталог</span>
+              <h2>Категорії та напрямки</h2>
+            </div>
+            <p>Навігація українським мистецтвом — від глибинних етнічних витоків до авангарду й новітніх генеративних технологій.</p>
+          </div>
+          <div class="bento-grid">
+            <article class="bento-card bento-feature">
+              <span class="card-index">01</span>
+              <svg class="bento-star" viewBox="0 0 160 160" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M80 7 98 45l39-22-22 39 38 18-38 18 22 39-39-22-18 38-18-38-39 22 22-39L7 80l38-18-22-39 39 22Z" />
+                  <path d="m80 34 13 33 33 13-33 13-13 33-13-33-33-13 33-13Z" />
+                  <rect x="61" y="61" width="38" height="38" transform="rotate(45 80 80)" />
+                  <circle cx="80" cy="80" r="8" />
+                </g>
+              </svg>
+              <div class="card-content">
+                <span class="card-kicker">Спадщина</span>
+                <h3>Етно-мотиви<br />&amp; Витоки</h3>
+                <p>Текстиль, кераміка, косівський розпис та народна ікона</p>
+                <a class="link-arrow" href="gallery.html"><span>Переглянути роботи</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              </div>
+            </article>
+
+            <article class="bento-card bento-paint">
+              <span class="card-index">02</span>
+              <div class="palette-icon" aria-hidden="true">
+                <svg viewBox="0 0 90 90">
+                  <path d="M45 11c-20 0-35 14-35 32 0 16 12 27 27 27h5c4 0 6-4 4-7-3-5 1-11 7-11h12c10 0 16-7 14-17C76 21 62 11 45 11Z" />
+                  <circle cx="29" cy="34" r="4" /><circle cx="42" cy="25" r="4" /><circle cx="57" cy="30" r="4" />
+                  <path d="m65 60 14 19M61 63l7-7" />
+                </svg>
+              </div>
+              <div class="card-content">
+                <span class="card-kicker">XX–XXI століття</span>
+                <h3>Сучасний живопис</h3>
+                <p>Експресіонізм, абстракція та неомодернізм</p>
+                <a class="link-arrow" href="gallery.html"><span>Переглянути</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              </div>
+            </article>
+
+            <article id="artists" class="bento-card bento-dark">
+              <span class="card-index">03</span>
+              <div class="artists-mark" aria-hidden="true">А—Я</div>
+              <div class="card-content">
+                <span class="card-kicker">Імена</span>
+                <h3>Реєстр<br />митців</h3>
+                <p>Понад 600 авторів у відкритій біографічній базі</p>
+                <a class="link-arrow" href="artists.html"><span>Знайти автора</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              </div>
+            </article>
+
+            <article class="bento-card bento-wide">
+              <div class="wide-image"><img src="https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?auto=format&fit=crop&w=1400&q=85" alt="Глядачка розглядає картину в музейному просторі" loading="lazy" /></div>
+              <div class="card-content">
+                <span class="card-kicker">Доступно всюди</span>
+                <h3>Онлайн-експозиції</h3>
+                <p>Віртуальні кураторські маршрути, 3D-моделі та архівні матеріали високої роздільної здатності.</p>
+                <a class="link-arrow" href="gallery.html"><span>Перейти до галереї</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ВІДЕОСЕКЦІЯ (EMBEDDED VIDEO) ============ -->
+      <section id="video-showcase" class="video-showcase-section">
+        <div class="container video-showcase-inner">
+          <div class="video-showcase-header">
+            <div>
+              <span class="section-number">02 / Відеоманіфест</span>
+              <h2>Цифровий вимір: Мистецтво в русі</h2>
+            </div>
+            <p>Оригінальний генеративний відеоарт хабу MYSTETSVO: переосмислення колористики, геометричних орнаментів та світлових ритмів української візуальної традиції.</p>
+          </div>
+
+          <div class="video-player-wrapper">
+            <video id="main-art-video" class="video-player" controls playsinline preload="metadata">
+              <source src="art-video.mp4" type="video/mp4" />
+              <source src="gemini_generated_video_341eb5d9 (1).mp4" type="video/mp4" />
+              Ваш браузер не підтримує відтворення вбудованого відео.
+            </video>
+            <div id="video-play-btn" class="video-play-overlay" aria-label="Відтворити відео">
+              <div class="video-play-btn">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-meta-bar">
+            <div>
+              <span class="video-tag">Прем’єра арт-відео</span>
+              <strong style="margin-left: 12px;">«Трансформація форми: Код спадщини»</strong>
+            </div>
+            <div>
+              <span>Тривалість: <strong>0:09</strong> · Формат: <strong>HD 720p / 60fps</strong> · Студія цифрових резиденцій MYSTETSVO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Афіша подій ============ -->
+      <section id="events" class="section events-section">
+        <div class="container">
+          <div class="events-top">
+            <div>
+              <span class="section-number">03 / Афіша</span>
+              <h2>Події у твоєму місті</h2>
+            </div>
+            <div class="filter-bar" role="tablist">
+              <button type="button" class="filter-btn events-filter-btn active" data-filter="all">Всі події</button>
+              <button type="button" class="filter-btn events-filter-btn" data-filter="exhibitions">Виставки</button>
+              <button type="button" class="filter-btn events-filter-btn" data-filter="lectures">Лекції</button>
+              <button type="button" class="filter-btn events-filter-btn" data-filter="workshops">Майстер-класи</button>
+            </div>
+          </div>
+          
+          <div class="events-grid">
+            <article class="event-card" data-type="exhibitions">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1606819717115-9159c900370b?auto=format&fit=crop&w=1200&q=85" alt="Відвідувачка розглядає живопис у галереї" loading="lazy" />
+                <span>Виставки</span>
+              </div>
+              <div class="event-body">
+                <time>18–25 жовтня</time>
+                <h3>Земля говорить</h3>
+                <p>Львів, Центр Довженка</p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
+                  <button class="calendar-button" type="button"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <a href="events.html" class="button button-dark event-register" style="font-size:11px; min-height:36px; padding:0 14px;">Реєстрація</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card" data-type="lectures">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?auto=format&fit=crop&w=1400&q=85" alt="Відвідувачка перед картиною в музеї" loading="lazy" />
+                <span>Лекції</span>
+              </div>
+              <div class="event-body">
+                <time>26 жовтня</time>
+                <h3>Код українського модернізму</h3>
+                <p>Львів, Порохова вежа</p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
+                  <button class="calendar-button" type="button"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <a href="events.html" class="button button-dark event-register" style="font-size:11px; min-height:36px; padding:0 14px;">Реєстрація</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card" data-type="workshops">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1790055279508-cd2c42977c63?auto=format&fit=crop&w=1200&q=85" alt="Традиційна українська хата з орнаментами" loading="lazy" />
+                <span>Майстер-класи</span>
+              </div>
+              <div class="event-body">
+                <time>02 листопада</time>
+                <h3>Жива традиція: кераміка</h3>
+                <p>Львів, Артцентр Я Галерея</p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
+                  <button class="calendar-button" type="button"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <a href="events.html" class="button button-dark event-register" style="font-size:11px; min-height:36px; padding:0 14px;">Реєстрація</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 40px;">
+            <a class="button button-outline" href="events.html">Всі 84 події у повному розкладі <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Історія твору ============ -->
+      <section id="provenance" class="section provenance">
+        <div class="container">
+          <div class="provenance-label"><span>04</span> Історія твору &amp; Провенанс</div>
+          <div class="provenance-grid">
+            <figure class="artwork">
+              <div class="artwork-image artwork-zoom-trigger">
+                <img src="https://images.unsplash.com/photo-1790055279508-cd2c42977c63?auto=format&fit=crop&w=1200&q=85" alt="Традиційна українська садиба, ілюстрація до твору «Гуцульська вербниця»" loading="lazy" />
+                <button type="button" aria-label="Збільшити зображення"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5M10.5 7v7M7 10.5h7" /></svg></button>
+              </div>
+              <figcaption>Репрезентативне зображення колекції · Nadin Nandin / Unsplash</figcaption>
+            </figure>
+            <div class="provenance-copy">
+              <span class="card-kicker">Твір місяця</span>
+              <h2>«Гуцульська вербниця»</h2>
+              <div class="metadata">
+                <div><span>Автор</span><strong>Олена Кульчицька</strong></div>
+                <div><span>Рік</span><strong>1924</strong></div>
+                <div><span>Техніка</span><strong>Лінорит, папір</strong></div>
+              </div>
+              <div class="timeline">
+                <details open>
+                  <summary><span>1924–1936</span> Майстерня авторки</summary>
+                  <p>Створено у Львові. Робота перебувала в особистій збірці видатної художниці.</p>
+                </details>
+                <details>
+                  <summary><span>1955</span> Музейна колекція</summary>
+                  <p>Передано до фондів Національного музею у Львові імені Андрея Шептицького.</p>
+                </details>
+                <details>
+                  <summary><span>2026</span> Цифровий архів</summary>
+                  <p>Оцифровано у надвисокій якості та внесено до реєстру відкритого доступу MYSTETSVO.</p>
+                </details>
+              </div>
+              <a class="button button-outline download-button" href="gallery.html"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12m0 0 5-5m-5 5-5-5" /><path d="M4 19v2h16v-2" /></svg> Завантажити PDF-паспорт твору</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Співпраця ============ -->
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-intro">
+            <span class="section-number">05 / Співпраця</span>
+            <h2>Створимо культурний проєкт разом</h2>
+            <p>Розкажіть про свою ідею. Ми допоможемо з оцифруванням, цифровою експозицією, відеоартом або інституційним партнерством.</p>
+            <div class="contact-note">
+              <span>Відповідаємо протягом</span>
+              <strong>2 робочих днів</strong>
+            </div>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <label class="field field-wide">
+              <span>Я звертаюся як</span>
+              <select name="role">
+                <option selected>Відвідувач / Шанувальник мистецтва</option>
+                <option>Митець / Автор</option>
+                <option>Куратор / Представник галереї</option>
+                <option>Дослідник спадщини</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Ім’я</span>
+              <input name="name" required placeholder="Ваше ім’я" />
+            </label>
+            <label class="field">
+              <span>Email / Телефон</span>
+              <input name="contact" required type="text" placeholder="hello@example.com" />
+            </label>
+            <label class="field field-wide">
+              <span>Тема проєкту</span>
+              <input name="subject" required placeholder="Коротко про вашу ідею" />
+            </label>
+            <label class="field field-wide">
+              <span>Повідомлення</span>
+              <textarea name="message" required rows="4" placeholder="Опишіть вашу ідею чи запит..."></textarea>
+            </label>
+            <div class="form-footer field-wide">
+              <label class="attach-button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m20 11.5-8.7 8.7a5.2 5.2 0 0 1-7.4-7.4l9.4-9.4a3.5 3.5 0 0 1 5 5l-9.4 9.4a1.8 1.8 0 0 1-2.5-2.5l8.7-8.7" /></svg>
+                <span>Прикріпити портфоліо <small>до 50 МБ</small></span>
+                <input type="file" name="attachment" hidden />
+              </label>
+              <button class="button button-dark" type="submit">Надіслати запит <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+            <svg viewBox="0 0 50 44" aria-hidden="true">
+              <path d="M25 2 48 22 25 42 2 22Z" />
+              <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+            </svg>
+            <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+          </a>
+          <p>Цифровий хаб українського мистецтва, що зберігає пам’ять і відкриває нові імена.</p>
+        </div>
+        <div class="footer-links">
+          <div><strong>Досліджувати</strong><a href="events.html">Події</a><a href="gallery.html">Галерея</a><a href="artists.html">Митці</a></div>
+          <div><strong>Співпраця</strong><a href="artists.html">Для митців</a><a href="about.html">Для галерей</a><a href="about.html#contacts">Партнерство</a></div>
+        </div>
+        <div class="newsletter">
+          <span>Раз на місяць — найважливіше</span>
+          <strong>Листи про мистецтво</strong>
+          <form action="#" method="post">
+            <input type="email" name="email" required placeholder="Ваш email..." aria-label="Email для підписки" />
+            <button type="submit" aria-label="Підписатися"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 MYSTETSVO · Студентка Бурба Д. Р. (гр. ПП-25)</span>
+        <a href="about.html">Політика конфіденційності</a>
+        <span>Зроблено в Україні 🇺🇦</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Artwork Lightbox Modal -->
+  <div id="artwork-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button type="button" class="modal-close" aria-label="Закрити">&times;</button>
+      <div class="modal-art-preview">
+        <img class="modal-art-img" src="" alt="Перегляд твору" />
+      </div>
+      <h3 class="modal-art-title">Назва твору</h3>
+      <p class="modal-art-author">Автор та техніка</p>
+      <div style="display: flex; gap: 12px; margin-top: 20px;">
+        <button type="button" class="button button-dark modal-close">Закрити перегляд</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

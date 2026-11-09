@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Афіша подій — MYSTETSVO</title>
+  <meta name="description" content="Культурні події, лекції, майстер-класи та екскурсії в арт-хабі MYSTETSVO." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top" class="site-shell">
+
+    <!-- ============ Header ============ -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+          <svg viewBox="0 0 50 44" aria-hidden="true">
+            <path d="M25 2 48 22 25 42 2 22Z" />
+            <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+          </svg>
+          <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Меню" />
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Головна</a>
+          <a href="events.html" aria-current="page">Події</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="artists.html">Митці</a>
+          <a href="about.html">Про хаб</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search-field">
+            <span class="sr-only">Пошук</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4.2 4.2" /></svg>
+            <input type="search" placeholder="Пошук (Enter)" />
+          </label>
+          <label class="city-select">
+            <span>Місто:</span>
+            <select aria-label="Оберіть місто">
+              <option selected>Львів</option>
+              <option>Київ</option>
+              <option>Одеса</option>
+              <option>Харків</option>
+            </select>
+          </label>
+        </div>
+        <label class="menu-button" for="menu-toggle">
+          <span class="sr-only">Відкрити або закрити меню</span>
+          <span class="icon-open"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18" /></svg></span>
+          <span class="icon-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 5 14 14M19 5 5 19" /></svg></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section class="hero hero-page">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span> Афіша</div>
+            <h1>Події, що поєднують людей і мистецтво</h1>
+            <p>Лекції про український авангард, практичні воркшопи з кераміки та кураторські екскурсії. Обирайте подію та реєструйтеся онлайн за кілька кліків.</p>
+            <div class="button-row">
+              <a class="button button-dark" href="#upcoming">Дивитися афішу <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></a>
+              <a class="button button-outline" href="about.html#contacts">Запропонувати подію</a>
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1606819717115-9159c900370b?auto=format&fit=crop&w=1200&q=85" alt="Відвідувачка розглядає живопис у галереї" />
+            <figcaption class="image-credit">Фото: Unsplash</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ Майбутні події ============ -->
+      <section id="upcoming" class="section events-section events-page" aria-labelledby="upcoming-title">
+        <div class="container">
+          <header class="section-heading">
+            <div>
+              <span class="section-number">01 / Календар</span>
+              <h2 id="upcoming-title">Актуальна афіша сезону</h2>
+            </div>
+            <p>Участь у більшості заходів безкоштовна або за донейт, кількість місць у залах лімітована.</p>
+          </header>
+
+          <!-- Інтерактивні фільтри -->
+          <div class="filter-bar" role="tablist">
+            <button type="button" class="filter-btn events-filter-btn active" data-filter="all">Всі події</button>
+            <button type="button" class="filter-btn events-filter-btn" data-filter="lectures">Лекції</button>
+            <button type="button" class="filter-btn events-filter-btn" data-filter="workshops">Майстер-класи</button>
+            <button type="button" class="filter-btn events-filter-btn" data-filter="excursions">Екскурсії</button>
+          </div>
+
+          <div class="events-grid">
+            <article class="event-card event-card--text" data-type="lectures">
+              <div class="event-body">
+                <p class="event-tag">Лекція</p>
+                <time datetime="2026-10-26T18:30">26 жовтня · 18:30</time>
+                <h3>Код українського модернізму</h3>
+                <p class="event-desc">Мистецтвознавиця аналізує, як новаторський рух 1920-х заклав візуальну граматику сучасної графіки та дизайну.</p>
+                <p class="event-place"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.3" /></svg> Львів, Порохова вежа</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:auto;">
+                  <button class="calendar-button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <button class="button button-dark event-register" type="button">Зареєструватися</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card event-card--text" data-type="workshops">
+              <div class="event-body">
+                <p class="event-tag">Майстер-клас</p>
+                <time datetime="2026-11-02T12:00">02 листопада · 12:00</time>
+                <h3>Жива традиція: кераміка</h3>
+                <p class="event-desc">Практична робота з майстринею: формотворення, техніка сграфіто та нанесення автентичних мотивів.</p>
+                <p class="event-place"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.3" /></svg> Львів, Артцентр Я Галерея</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:auto;">
+                  <button class="calendar-button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <button class="button button-dark event-register" type="button">Зареєструватися</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card event-card--text" data-type="workshops">
+              <div class="event-body">
+                <p class="event-tag">Воркшоп</p>
+                <time datetime="2026-11-08T15:00">08 листопада · 15:00</time>
+                <h3>Цифровий архів: як оцифровують спадщину</h3>
+                <p class="event-desc">Команда лабораторії показує повний процес: сканування раритетів, спектрозональний аналіз та метадані провенансу.</p>
+                <p class="event-place"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.3" /></svg> Львів, Центр Довженка</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:auto;">
+                  <button class="calendar-button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <button class="button button-dark event-register" type="button">Зареєструватися</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card event-card--text" data-type="excursions">
+              <div class="event-body">
+                <p class="event-tag">Екскурсія</p>
+                <time datetime="2026-11-14T11:00">14 листопада · 11:00</time>
+                <h3>«Нова українська хвиля»: кураторський тур</h3>
+                <p class="event-desc">Ексклюзивна екскурсія експозицією з 24 робіт від провідних українських митців сучасності.</p>
+                <p class="event-place"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.3" /></svg> Львів, Центр Довженка</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:auto;">
+                  <button class="calendar-button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <button class="button button-dark event-register" type="button">Зареєструватися</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card event-card--text" data-type="lectures">
+              <div class="event-body">
+                <p class="event-tag">Онлайн-лекція</p>
+                <time datetime="2026-11-21T19:00">21 листопада · 19:00</time>
+                <h3>Провенанс: шлях твору від майстерні до музею</h3>
+                <p class="event-desc">Як сучасна наука встановлює автентичність полотна та чому відкритий реєстр захищає культурну спадщину.</p>
+                <p class="event-place"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.3" /></svg> Онлайн-трансляція (Zoom / YouTube)</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:auto;">
+                  <button class="calendar-button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="1" /><path d="M8 3v4M16 3v4M3 10h18" /></svg> В календар</button>
+                  <button class="button button-dark event-register" type="button">Зареєструватися</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light" aria-label="MYSTETSVO — на головну">
+            <svg viewBox="0 0 50 44" aria-hidden="true">
+              <path d="M25 2 48 22 25 42 2 22Z" />
+              <path d="M25 2v40M2 22h46M9 15l16 14 16-14M9 29l16-14 16 14" />
+            </svg>
+            <span>MYSTETSVO<small>ART &amp; CULTURE HUB</small></span>
+          </a>
+          <p>Цифровий хаб українського мистецтва, що зберігає пам’ять і відкриває нові імена.</p>
+        </div>
+        <div class="footer-links">
+          <div><strong>Досліджувати</strong><a href="events.html">Події</a><a href="gallery.html">Галерея</a><a href="artists.html">Митці</a></div>
+          <div><strong>Співпраця</strong><a href="artists.html">Для митців</a><a href="about.html">Для галерей</a><a href="about.html#contacts">Партнерство</a></div>
+        </div>
+        <div class="newsletter">
+          <span>Раз на місяць — найважливіше</span>
+          <strong>Листи про мистецтво</strong>
+          <form action="#" method="post">
+            <input type="email" name="email" required placeholder="Ваш email..." aria-label="Email для підписки" />
+            <button type="submit" aria-label="Підписатися"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12h15" /><path d="m14 7 5 5-5 5" /></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 MYSTETSVO · Студентка Бурба Д. Р. (гр. ПП-25)</span>
+        <a href="about.html">Політика конфіденційності</a>
+        <span>Зроблено в Україні 🇺🇦</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- RSVP Modal -->
+  <div id="register-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button type="button" class="modal-close" aria-label="Закрити">&times;</button>
+      <span class="section-number" style="color:var(--red);">Швидка реєстрація</span>
+      <h3 id="modal-event-name">Реєстрація на подію</h3>
+      <p>Вкажіть ваші дані, і ми надішлемо запрошення та нагадування в день заходу.</p>
+      
+      <form id="register-form" style="display:flex; flex-direction:column; gap:16px;">
+        <label class="field" style="border: 1px solid var(--line); padding: 8px 12px; background: white;">
+          <span style="font-size:11px; text-transform:uppercase; color:#777; display:block; margin-bottom:4px;">Ваше ім'я</span>
+          <input required type="text" placeholder="Олександр / Марія" style="width:100%; border:none; outline:none;" />
+        </label>
+        <label class="field" style="border: 1px solid var(--line); padding: 8px 12px; background: white;">
+          <span style="font-size:11px; text-transform:uppercase; color:#777; display:block; margin-bottom:4px;">Електронна пошта</span>
+          <input required type="email" placeholder="name@domain.com" style="width:100%; border:none; outline:none;" />
+        </label>
+        <label class="field" style="border: 1px solid var(--line); padding: 8px 12px; background: white;">
+          <span style="font-size:11px; text-transform:uppercase; color:#777; display:block; margin-bottom:4px;">Кількість місць</span>
+          <select style="width:100%; border:none; outline:none;">
+            <option>1 місце</option>
+            <option>2 місця</option>
+            <option>3 місця</option>
+          </select>
+        </label>
+        <button type="submit" class="button button-dark" style="margin-top:12px;">Підтвердити участь</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
